@@ -41,6 +41,6 @@
 @media screen and (min-width: 740px) {
     .events-container {
 grid-template-columns: 1fr 1fr 1fr;
-margin: 4rem 0;
+margin: 4rem auto;
     }
 }
