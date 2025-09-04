@@ -4,80 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Haven Bookstore</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery.css">
+    <title>Gallery</title>
 </head>
 
 <body>
     <!-- HEADER -->
     <header>
 
-        <img src="./images/Client3_LogoPalette1_2E4057.png" alt="Book Haven Bookstore site logo">
-        <ul>
+        <div class="desktop-nav">
+            <a href="/css/index.html">
+                <img src="./images/Client3_LogoPalette1_2E4057.png" alt="Book Haven Bookstore site logo"
+                    class="site-logo"></a>
+            <ul>
 
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./gallery.html">Gallery</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./upcoming-events.html">Upcoming Events</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./upcoming-events.html">Upcoming Events</a></li>
 
-        </ul>
+            </ul>
+        </div>
 
-        <button class="mobile-nav">
 
-            <div class="mobile-hamburger">
-                <div class="horizontal-navbar"></div>
-                <div class="horizontal-navbar"></div>
-                <div class="horizontal-navbar"></div>
-            </div>
+
+
+        <button class="mobile-ham">
+            <img src="./images/bars-2.svg" alt="">
+
         </button>
+        <div class="mobile-menu hide" id="mobileMenu">
+            <img src="./images/close.svg" alt="close icon" class="mobile-close-icon">
+            <ul class="mobile-nav-links">
+
+                <li> <a href="./index.html">Home</a></li>
+                <li> <a href="./gallery.html">Gallery</a></li>
+                <li> <a href="./about.html">About Us</a></li>
+                <li> <a href="./upcoming-events.html">Upcoming Events</a></li>
+            </ul>
+        </div>
     </header>
 
-    <!-- HOMEPAGE HERO -->
+    <section class="page-title">
 
-    <section>
-        <img src="./images/book-store-hero.jpg" alt="a young girl reading a book in a library" style="width: 90%;">
-        <h1>Welcome to Book Haven Bookstore</h1>
-        <button>Shop Products</button>
+        <h1>Our Gallery</h1>
     </section>
-
-    <!-- SHOP BY CATEGORY -->
-
-    <section>
-        <h2>Shop by Category</h2>
-
+    <!-- CART SECTION -->
+    <section class="cart-section">
         <div>
-            <div>
-                <img src="./images/books.jpg" alt="image of books" style="width: 30%;">
-                <h3>Books</h3>
-            </div>
-            <div>
-                <img src="./images/magazines.jpg" alt="image of a magazine" style="width: 30%;">
-                <h3>Magazines</h3>
-            </div>
-            <div>
-                <img src="./images/journals.jpg" alt="image of a journal" style="width: 30%;">
-                <h3>Journals</h3>
-            </div>
-            <div>
-                <img src="./images/office-supplies.jpg" alt="image of imac with office supplies" style="width: 30%;">
-                <h3>Office supplies</h3>
-            </div>
+            <h2>View your products in cart</h2>
+
+            <button>View cart</button>
         </div>
     </section>
 
-    <!-- FEATURED PRODUCTS SECTION -->
-    <section>
-        <div>
+    <!-- BOOKS SECTION -->
+
+
+    <section class="books-section">
+        <div class="books-section__header">
             <h2>Featured Products</h2>
             <p>Shop our featured products</p>
         </div>
 
-        <div>
+        <div class="books">
             <!-- Book 1 -->
-            <div>
-                <img src="./images/Client3_Book1.png" alt="">
+            <div class="books_card">
+                <img src="./images/Client3_Book1.png" alt="" class="books_card__image">
                 <h4><i>Brie Mine 4Ever</i>, a book for cheese loversBrie Mine 4Ever, a book for cheese lovers </h4>
-                <div>
+                <div class="books_card__details">
                     <div>$9.99</div>
                     <div>
 
@@ -89,14 +85,14 @@
                     </div>
                 </div>
 
-                <button>Add to cart</button>
+                <button class="books_card__add_to_cart">Add to cart</button>
             </div>
 
             <!-- Book 2 -->
-            <div>
-                <img src="./images/Client3_Book2.png" alt="">
+            <div class="books_card">
+                <img src="./images/Client3_Book2.png" alt="" class="books_card__image">
                 <h4><i>Glory Riders</i>, a book about bikersGlory Riders, a book about bikers</h4>
-                <div>
+                <div class="books_card__details">
                     <div>$9.99</div>
                     <div>
 
@@ -107,16 +103,16 @@
                         <img src="./images/star.svg" alt="star">
                     </div>
                 </div>
-                <button>Add to cart</button>
+                <button class="books_card__add_to_cart">Add to cart</button>
 
             </div>
 
 
             <!-- Book 3 -->
-            <div>
-                <img src="./images/Client3_Book3.png" alt="">
+            <div class="books_card">
+                <img src="./images/Client3_Book3.png" alt="" class="books_card__image">
                 <h4>Sorcerer’s Shadowed Chronicles, a fantasy book</h4>
-                <div>
+                <div class="books_card__details">
                     <div>$9.99</div>
                     <div>
 
@@ -127,15 +123,15 @@
                         <img src="./images/star.svg" alt="star">
                     </div>
                 </div>
-                <button>Add to cart</button>
+                <button class="books_card__add_to_cart">Add to cart</button>
             </div>
 
 
             <!-- Book 4 -->
-            <div>
-                <img src="./images/Client3_Magazine1.png" alt="">
+            <div class="books_card">
+                <img src="./images/Client3_Magazine1.png" alt="" class="books_card__image">
                 <h4>Ball, a magazine about pickleball</h4>
-                <div>
+                <div class="books_card__details">
                     <div>$9.99</div>
                     <div>
 
@@ -146,15 +142,15 @@
                         <img src="./images/star.svg" alt="star">
                     </div>
                 </div>
-                <button>Add to cart</button>
+                <button class="books_card__add_to_cart">Add to cart</button>
             </div>
 
 
             <!-- Book 5 -->
-            <div>
-                <img src="./images/Client3_Magazine2.png" alt="">
+            <div class="books_card">
+                <img src="./images/Client3_Magazine2.png" alt="" class="books_card__image">
                 <h4><i>Travel</i>, a magazine for travelersTravel, a magazine for travelers</h4>
-                <div>
+                <div class="books_card__details">
                     <div>$9.99</div>
                     <div>
 
@@ -165,15 +161,15 @@
                         <img src="./images/star.svg" alt="star">
                     </div>
                 </div>
-                <button>Add to cart</button>
+                <button class="books_card__add_to_cart">Add to cart</button>
             </div>
 
 
             <!-- Book 6 -->
-            <div>
-                <img src="./images/Client3_Magazine3.png" alt="">
+            <div class="books_card">
+                <img src="./images/Client3_Magazine3.png" alt="" class="books_card__image">
                 <h4>Eat., a magazine for foodies</h4>
-                <div>
+                <div class="books_card__details">
                     <div>$9.99</div>
                     <div>
 
@@ -184,15 +180,15 @@
                         <img src="./images/star.svg" alt="star">
                     </div>
                 </div>
-                <button>Add to cart</button>
+                <button class="books_card__add_to_cart">Add to cart</button>
             </div>
 
 
             <!-- Book 7 -->
-            <div>
-                <img src="./images/Client3_ToteBag.png" alt="">
+            <div class="books_card">
+                <img src="./images/Client3_ToteBag.png" alt="" class="books_card__image">
                 <h4>A canvas tote bag with black lettering that says ALL I DO IS READ READ READ</h4>
-                <div>
+                <div class="books_card__details">
                     <div>$9.99</div>
                     <div>
 
@@ -203,13 +199,13 @@
                         <img src="./images/star.svg" alt="star">
                     </div>
                 </div>
-                <button>Add to cart</button>
+                <button class="books_card__add_to_cart">Add to cart</button>
             </div>
             <!-- Book 8 -->
-            <div>
-                <img src="./images/Client3_Notebook.png" alt="">
+            <div class="books_card">
+                <img src="./images/Client3_Notebook.png" alt="" class="books_card__image">
                 <h4>A notebook with text on the cover that says Book Haven Bookstore</h4>
-                <div>
+                <div class="books_card__details">
                     <div>$9.99</div>
                     <div>
 
@@ -220,13 +216,13 @@
                         <img src="./images/star.svg" alt="star">
                     </div>
                 </div>
-                <button>Add to cart</button>
+                <button class="books_card__add_to_cart">Add to cart</button>
             </div>
             <!-- Book 9 -->
-            <div>
-                <img src="./images/Client3_Stickers.png" alt="">
+            <div class="books_card">
+                <img src="./images/Client3_Stickers.png" alt="" class="books_card__image">
                 <h4>A set of four Book Haven Bookstore stickers that promote reading</h4>
-                <div>
+                <div class="books_card__details">
                     <div>$9.99</div>
                     <div>
 
@@ -237,74 +233,7 @@
                         <img src="./images/star.svg" alt="star">
                     </div>
                 </div>
-                <button>Add to cart</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section with 2 Images -->
-
-    <section>
-        <!-- LEFT -->
-        <div>
-            <img src="./images/home-left-1.jpg" alt="library image" style="width: 50%;">
-        </div>
-        <!-- RIGHT -->
-
-        <div>
-            <img src="./images/home-right-1.jpg" alt="a woman reading book inside a library" style="width: 50%;">
-        </div>
-    </section>
-
-    <!-- WHY SHOP WITH US SECTION -->
-    <section>
-        <div>
-            <h2>Why Shop with Us</h2>
-        </div>
-
-        <div>
-
-            <div>
-                <img src="./images/shopping_bag_speed.svg" alt="return">
-
-                <h5>Easy exchange</h5>
-                <p>We offer a smooth exchange process for all of our customers. Print label, and when we receive the
-                    item, we will issue you full refund within 7 business days.</p>
-            </div>
-            <div>
-                <img src="./images/forum.svg" alt="support">
-
-                <h5>24/7 customer support</h5>
-                <p>We provide 24/7 customer support via live chat, email, and phone to answer all of your questions.</p>
-            </div>
-            <div>
-                <img src="./images/festival.svg" alt="local">
-                <h5>Locally owned and operated</h5>
-                <p>We are a locally operated book store. We also organize different events and invite you to come and
-                    join us!</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- TESTIMONIALS SECTION -->
-    <section>
-        <h2>Testimonials</h2>
-
-        <div>
-            <div>
-                <h6>John D.</h6>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                    looking at its layout.</p>
-            </div>
-            <div>
-                <h6>John D.</h6>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                    looking at its layout.</p>
-            </div>
-            <div>
-                <h6>John D.</h6>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                    looking at its layout.</p>
+                <button class="books_card__add_to_cart">Add to cart</button>
             </div>
         </div>
     </section>
@@ -312,19 +241,19 @@
     <!-- FOOTER -->
     <footer>
 
-        <div>
+        <div class="footer__signup">
             <h3>Get 10% off on your first order</h3>
 
-            <div>
 
-                <form>
 
-                    <input type="email" name="email" placeholder="Enter your email">
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
+            <form class="footer__signup__form">
+
+                <input type="email" name="email" placeholder="Enter your email">
+                <button type="submit" class="btn">Submit</button>
+            </form>
+
         </div>
-        <div>
+        <div class="copyrights">
 
             <img src="./images/Client3_LogoPalette1_2E4057.png" alt="footer logo">
 
@@ -334,7 +263,7 @@
                 <a href="">Privacy policy</a>
             </div>
 
-            <div>
+            <div class="socials">
 
                 <a href="#"><img src="./images/fblogo.svg" alt=""></a>
                 <a href="#"><img src="./images/insta.svg" alt=""></a>
