@@ -184,3 +184,6 @@ function addProductsInDiv(products){
     el.innerHTML = `<p><b>Total:<b> $${total}</p>`
 cartItemsDiv.appendChild(el)
 }
+
+
+
