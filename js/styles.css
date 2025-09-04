@@ -1,0 +1,508 @@
+:root {
+    ----main-color: #131C26;
+    --color-purple: #983AAf;
+}
+.page-title {
+    background-color: var(--color-purple);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+.page-title h1 {
+    color: white;
+}
+* {
+
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+h1 {
+    font-size: 2rem;
+    color: var(----main-color);
+}
+
+h2 {
+        color: var(----main-color);
+            font-size: 2rem;
+            
+}
+ul {
+    list-style: none;
+}
+
+button {
+
+    border: none;
+    background-color: transparent;
+
+}
+
+.mobile-hamburger {
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem
+}
+.horizontal-navbar {
+    width: 1rem;
+    height: 0.2rem;
+    background-color: black;
+}
+
+
+
+.site-logo {
+    max-width: 2.4rem;
+
+}
+
+.desktop-nav ul{
+
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(----main-color);
+
+}
+
+a:visited {
+    color: inherit
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+    
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+ border: 1px solid var(----main-color);
+    padding: 1rem;
+
+
+}
+
+.mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hide {
+    display: none;
+}
+
+
+.mobile-close-icon {
+    margin-bottom: 2rem;
+    
+}
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("./images/book-store-hero.jpg");
+    background-size: cover;
+    background-position: center;
+
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+.hero__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero__inner h1 {
+    color: white
+}
+
+.hero__btn {
+    background-color: white;
+    align-self: center;
+    color: var(----main-color);
+    padding: 10px 20px;
+    border-radius: 9999px;
+
+
+}
+
+.hero__btn:hover {
+    text-decoration: none;
+    background-color: var(--color-purple);
+    color: white;
+    transition: all;
+    animation-duration: 0.3;
+}
+
+/* SHOP BY CATEGORY */
+.category, .products, .why_shop_with_us, .testimonials{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 5rem 1rem;
+  
+}
+
+.category__wrapper {
+
+    display: grid;
+grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.category__wrapper__card1 {
+background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("./images/books.jpg");
+
+display: flex;
+padding: 2rem;
+width: 100%;
+color: white;
+align-items: end;
+background-position: center;
+background-size: cover;
+height: 200px;
+}
+.category__wrapper__card2 {
+background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("./images/magazines.jpg");
+width: 100%;
+display: flex;
+padding: 2rem;
+color: white;
+align-items: end;
+background-position: center;
+background-size: cover;
+height: 200px;
+}
+.category__wrapper__card3 {
+background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("./images/journals.jpg");
+width: 100%;
+display: flex;
+padding: 2rem;
+color: white;
+align-items: end;
+background-position: center;
+background-size: cover;
+height: 200px;
+}
+.category__wrapper__card4 {
+background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("./images/office-supplies.jpg");
+width: 100%;
+display: flex;
+padding: 2rem;
+color: white;
+align-items: end;
+background-position: center;
+background-size: cover;
+height: 200px;
+}
+
+/* PRODUCTS */
+.products_wrapper {
+    margin-top: 4rem;
+    display: grid;
+    align-items: start;
+    gap: 3rem;
+
+    grid-template-columns: 1fr;
+}
+.products_wrapper__card {
+     display: flex;
+     gap: 1rem;
+  flex-direction: column;
+  color: var(----main-color);
+  width: 100%;
+}
+.products_wrapper__card__image {
+    width: 100%;
+ 
+}
+
+.products_wrapper__card__price__rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem
+}
+
+.products_wrapper__card__add_to_cart {
+    border-radius: 9999px;
+    background-color: white;
+    border: 1px solid var(----main-color);
+    align-self: flex-start;
+    padding: 10px 20px;
+}
+
+.products_wrapper__card__add_to_cart:hover {
+    background-color: var(--color-purple);
+    border-color: var(--color-purple);
+    color: white;
+    cursor: pointer;
+}
+
+
+/* -----SIDE IMAGES----- */
+.side-images {
+
+}
+
+.image-1 {
+    width: 100%;
+}
+
+.image-2 {
+    width: 100%;
+}
+
+/* WHY US */
+
+
+.why_shop_with_us__wrapper {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.why_shop_with_us__card {
+    color: var(----main-color);
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.why_shop_with_us__card h5 {
+    font-weight: 400;
+    margin: 0.5rem 0;
+    font-size: 20px;
+}
+
+.why_shop_with_us__card img {
+    width: 40px;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+    text-align: center;
+}
+.testimonials__list {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+}
+
+/* FOOTER */
+
+
+footer {
+    background-color: #f1f1f1;
+    padding: 4rem 1rem;
+}
+
+.footer__signup {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer__signup h3 {
+font-size: 1.6rem;
+}
+
+.footer__signup__form {
+    margin-top: 1rem;
+    display: flex;
+    max-width: 400px;
+    margin: 1rem auto;
+}
+.footer__signup__form input {
+    border: 1px solid gray;
+    padding: 10px 5px;
+    width: 70%;
+}
+
+.footer__signup__form .btn {
+    background-color: var(--color-purple);
+  width: 30%;
+  color: white;
+  cursor: pointer;
+    align-self: stretch;
+}
+
+.copyrights {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.copyrights img {
+width: 30px;
+margin: 0 auto;
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials img {
+    width: 20px;
+}
+
+/* FOOTER */
+@media screen and (min-width: 720px) {
+
+    h1 {
+    font-size: 3rem;
+}
+
+    .desktop-nav {
+
+width: 1280px;
+margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+.desktop-nav ul{
+display: flex;
+list-style: none;
+gap: 0.8rem;
+    
+}
+
+.mobile-nav {
+
+    display: none;
+}
+
+.mobile-ham {
+    display: none;
+}
+
+/* SHOP BY CATEGORY */
+.category__wrapper {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   
+}
+
+.category__wrapper__card1 {
+    height: 450px;
+}
+
+.category__wrapper__card1 h3 {
+    font-size: 1.6rem;
+}
+.category__wrapper__card2 {
+    height: 450px;
+}
+
+.category__wrapper__card2 h3 {
+    font-size: 1.6rem;
+}
+
+.category__wrapper__card3 {
+    height: 450px;
+}
+
+.category__wrapper__card3 h3 {
+    font-size: 1.6rem;
+}
+.category__wrapper__card4 {
+    height: 450px;
+}
+
+.category__wrapper__card4 h3 {
+    font-size: 1.6rem;
+}
+
+.products_wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.products_wrapper__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.side-images {
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+.products_wrapper__card__image {
+    width: 100%;
+}
+
+/* WHY US */
+
+.why_shop_with_us__wrapper {
+flex-direction: row;
+gap: 4rem;
+}
+
+/* TESTIMONIALS */
+
+.testimonials__list {
+    
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.testimonials__list h6 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.testimonials__list p {
+    margin-top: 0.5rem;
+    color: gray;
+}
+
+/* FOOTER */
+.copyrights {
+    flex-direction: row;
+justify-content: space-between;
+}
+
+.copyrights img {
+margin: 0;
+}
+/* FOOTER */
+}

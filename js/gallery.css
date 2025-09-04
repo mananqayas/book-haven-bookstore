@@ -11,7 +11,34 @@
     flex-direction: column;
     gap: 0.4rem
 }
+.clear-cart {
+    padding: 10px 20px;
+    margin-top: 2rem;
+    border-radius: 9999px;
+    margin-right: 1rem;
+    border: 1px solid var(----main-color);
+}
 
+.clear-cart:hover {
+    background-color: var(--color-purple);
+    border:  1px solid var(--color-purple);
+    color: white;
+    cursor: pointer;
+
+}
+
+.process-order {
+        background-color: var(--color-purple);
+        padding: 10px 20px;
+        border-radius: 9999px;
+        color: white
+
+}
+
+.process-order:hover {
+    background-color: var(----main-color);
+    cursor: pointer;
+}
 
 
 .cart-section button {
