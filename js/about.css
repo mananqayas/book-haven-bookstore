@@ -64,12 +64,13 @@
     border: none;
 }
 
-.textarea {
+textarea {
     display: block;
-    padding: 0;
+    padding: 1em;
     width: 100%;
     height: 200px;
     resize: vertical;
+    
 }
 
 .textarea:focus {

@@ -37,7 +37,7 @@ signUpForm.addEventListener("submit", (e)=> {
 
 
 
- alert(`Thank you for subscribing.`)
+ alert(`Thank you for subscribing`)
     }
     
    
@@ -67,7 +67,7 @@ clearCart.addEventListener("click", ()=>{
         cartItemsDiv.innerHTML = ""
         quanityDiv.innerHTML = "There are no items in your cart!"
     } else {
-            alert("No items to clear.")
+            alert("No items to clear")
     }
 })
 
@@ -81,7 +81,7 @@ processOrder.addEventListener("click", ()=> {
               cartItemsDiv.innerHTML = ""
         quanityDiv.innerHTML = "There are no items in your cart!"
     } else {
-        alert("Cart is empty.")
+        alert("Cart is empty")
     }
 })
 viewCartItems.addEventListener("click", ()=>{
