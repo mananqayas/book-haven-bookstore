@@ -13,6 +13,8 @@ mobileMenuCloseBtn.addEventListener("click", ()=> {
         mobileSubmenu.classList.toggle("hide")
 })
 
+
+
 const signUpForm = document.querySelector(".footer__signup__form")
 const emailData = document.querySelector('input[name="email"]')
 const signUpDiv = document.querySelector(".footer__signup")
@@ -107,6 +109,14 @@ cartClose.addEventListener("click",()=>{
 
 })
 
+document.addEventListener("keyup", (e)=> {
+
+    if(e.key === "Escape") {
+    cartDiv.style.opacity = "0"
+       cartDiv.style.pointerEvents = "none"
+
+    }
+ })
 
 
 const cartItems = []
