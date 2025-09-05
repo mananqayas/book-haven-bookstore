@@ -1,0 +1,46 @@
+:root {
+    ----main-color: #131C26;
+    --color-purple: #983AAf;
+}
+
+.events-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+    padding: 1rem;
+    grid-template-columns: 1fr;
+}
+
+.events-container__card {
+    width: 100%;
+}
+
+.events-container__card__image {
+    width: 100%;
+}
+
+
+.events-container__card__details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.events-container__card__details h3 {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+}
+.events-container__card__location, .events-container__card__time {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+@media screen and (min-width: 740px) {
+    .events-container {
+grid-template-columns: 1fr 1fr 1fr;
+margin: 4rem auto;
+    }
+}
