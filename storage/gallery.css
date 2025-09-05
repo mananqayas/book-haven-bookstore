@@ -1,6 +1,6 @@
 :root {
-    ----main-color: #2E4057;
-    --color-purple: #ee583f;
+    ----main-color: #2e2e4e;
+    --color-purple: #3e5641;
 }
 .books-section, .cart-section {
     padding: 2rem;

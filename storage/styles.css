@@ -1,6 +1,6 @@
 :root {
-    ----main-color: #2E4057;
-    --color-purple: #ee583f;
+    ----main-color: #2e2e4e;
+    --color-purple: #3e5641;
 }
 .page-title {
     background-color: var(--color-purple);
@@ -144,9 +144,9 @@ header {
 }
 
 .hero__btn {
-    background-color: white;
+    background-color: var(--color-purple);
+    color: white !important;
     align-self: center;
-    color: var(----main-color);
     padding: 10px 20px;
     border-radius: 9999px;
 
@@ -155,7 +155,7 @@ header {
 
 .hero__btn:hover {
     text-decoration: none;
-    background-color: var(--color-purple);
+    background-color: var(----main-color);
     color: white;
     transition: all;
     animation-duration: 0.3;
