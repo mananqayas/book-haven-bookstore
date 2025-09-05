@@ -11,6 +11,7 @@ const formData = new FormData(contactForm)
 
 const data = Object.fromEntries(formData.entries())
 localStorage.setItem("contactData", JSON.stringify(data))
+alert(`Thank you for your message, ${data.fName} ${data.lName}`)
 
 
 
