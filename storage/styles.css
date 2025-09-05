@@ -198,7 +198,7 @@ background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("./images/boo
 display: flex;
 padding: 2rem;
 width: 100%;
-color: white;
+color: white  !important;
 align-items: end;
 background-position: center;
 background-size: cover;
@@ -209,7 +209,7 @@ background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("./images/mag
 width: 100%;
 display: flex;
 padding: 2rem;
-color: white;
+color: white  !important;
 align-items: end;
 background-position: center;
 background-size: cover;
@@ -220,7 +220,7 @@ background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("./images/jou
 width: 100%;
 display: flex;
 padding: 2rem;
-color: white;
+color: white  !important;
 align-items: end;
 background-position: center;
 background-size: cover;
@@ -231,7 +231,7 @@ background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("./images/off
 width: 100%;
 display: flex;
 padding: 2rem;
-color: white;
+color: white  !important;
 align-items: end;
 background-position: center;
 background-size: cover;
