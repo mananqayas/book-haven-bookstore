@@ -198,18 +198,31 @@ background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("./images/boo
 display: flex;
 padding: 2rem;
 width: 100%;
-color: white  !important;
+color: white;
 align-items: end;
 background-position: center;
 background-size: cover;
 height: 200px;
+}
+
+.category__wrapper__card1 h3 {
+    color: white
+}
+.category__wrapper__card2 h3 {
+    color: white
+}
+.category__wrapper__card3 h3 {
+    color: white
+}
+.category__wrapper__card4 h3 {
+    color: white
 }
 .category__wrapper__card2 {
 background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("./images/magazines.jpg");
 width: 100%;
 display: flex;
 padding: 2rem;
-color: white  !important;
+color: white;
 align-items: end;
 background-position: center;
 background-size: cover;
@@ -220,7 +233,7 @@ background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("./images/jou
 width: 100%;
 display: flex;
 padding: 2rem;
-color: white  !important;
+color: white;
 align-items: end;
 background-position: center;
 background-size: cover;
@@ -231,7 +244,7 @@ background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("./images/off
 width: 100%;
 display: flex;
 padding: 2rem;
-color: white  !important;
+color: white;
 align-items: end;
 background-position: center;
 background-size: cover;
