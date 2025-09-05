@@ -13,7 +13,7 @@
 }
 .clear-cart {
     padding: 10px 20px;
-    margin-top: 2rem;
+    margin: 2rem 0;
     border-radius: 9999px;
     margin-right: 1rem;
     border: 1px solid var(----main-color);
