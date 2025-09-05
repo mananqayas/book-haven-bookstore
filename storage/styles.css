@@ -1,6 +1,8 @@
 :root {
     ----main-color: #131c26;
     --color-purple: #ee583f;
+
+    --parchment-white: #fff7ee;
 }
 .page-title {
     background-color: var(--color-purple);
@@ -97,7 +99,7 @@ header {
     padding: 10px 20px;
     position: sticky;
     top: 0;
-    background-color: #fff7ee;
+    background-color: var(--parchment-white);
     box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
     
 }
@@ -280,9 +282,7 @@ height: 200px;
 
 
 /* -----SIDE IMAGES----- */
-.side-images {
 
-}
 
 .image-1 {
     width: 100%;
@@ -336,7 +336,7 @@ height: 200px;
 
 
 footer {
-    background-color: #f1f1f1;
+    background-color: var(--parchment-white);
     padding: 4rem 1rem;
 }
 
